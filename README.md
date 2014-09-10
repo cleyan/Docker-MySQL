@@ -32,11 +32,15 @@ sudo docker build -t ##NAME_OF_YOUR_DOCKER_IMAGE## .
 </pre>
 
 <b>Step 4 :</b> Create an MySQL Installed Container from the image
+<pre>
 <b>Command Syntax: </b>
 sudo docker run --name [container name] -p [port to access (New Port):port exposed(original port)] -i -t [image name]
+</pre>
 <pre>
 <b>Command:</b>
 sudo docker run --name ##NAME_OF_YOUR_DOCKER_CONTAINER## -d -p 8082:80 ##NAME_OF_YOUR_DOCKER_IMAGE##
+</pre>
+<pre>
 <b>Example:</b>
 sudo docker run --name MySQL5.5_Container -d -p 3311:3306 kaushal_mysql
 Here

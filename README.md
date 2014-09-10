@@ -43,11 +43,13 @@ sudo docker run --name ##NAME_OF_YOUR_DOCKER_CONTAINER## -d -p 3311:3306 ##NAME_
 <pre>
 <b>Example:</b>
 sudo docker run --name MySQL5.5_Container -d -p 3311:3306 kaushal_mysql
-Here
-  MySQL5.5_Container : Is the name of my container, which will be displayed on running of docker ps -a
-  3311 : Is the port where the docker container is running on host machine
-  3306 : Is the exposed port
-  kaushal_mysql : Is the name of our docker image
+<b>Here</b>
+<ul>
+  <li>MySQL5.5_Container : Is the name of my container, which will be displayed on running of docker ps -a</li>
+  <li>3311 : Is the port where the docker container is running on host machine</li>
+  <li>3306 : Is the exposed port</li>
+  <li>kaushal_mysql : Is the name of our docker image</li>
+</ul>
 </pre>
 
 
@@ -66,13 +68,8 @@ mysql -uroot -proot -h172.17.42.1 -P3311
 </ul>
 
 <h4>Additional Notes:</h4>
-<b>Command for attaching the volume of your hosted machine:</b>
-<pre>
-<b>Command Syntax:</b>
-sudo docker run --name ##NAME_OF_YOUR_DOCKER_CONTAINER## -d -p 8082:80 -v ##HOSTED_VOLUME_LOCATION##:##CONTAINER_VOLUME_LOCATION## ##YOUR_IMAGE_NAME##
-</pre>
-
-<pre>
-<b>Command Example:</b>
-sudo docker run --name apache_ins -d -p 8082:80 -v /var/www/kaushal:/var/www apache_kaushal
-</pre>
+<ul>
+  <li>You can run multiple container using single image, but you will have to define a free port and the name for it.</li>
+  <li>You can get the Gateway IP and other information of the docker container using the command docker inspect  ##CONTAINER_NAME##</li>
+  <li> You can get the container name using the command docker ps -a</li>
+</ul>

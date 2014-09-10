@@ -76,4 +76,6 @@ mysql -uroot -proot -h172.17.42.1 -P3311
   <li>You can get the Gateway IP and other information of the docker container using the command docker inspect  ##CONTAINER_NAME##</li>
   <li> You can get the container name using the command docker ps -a</li>
   <li>You can use any of the mysql client command inside the docker</li>
+  <li>You can connect it from PHP using : mysql_connect('172.17.42.1:3311', 'root', 'root') - You will have to mention the port name here with IP.</li>
+  <li>For changing the username and password modify the MYSQL_USER and MYSQL_PASS enviroment variables inside the Dockerfile</li>
 </ul>

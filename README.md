@@ -38,7 +38,7 @@ sudo docker run --name [container name] -p [port to access (New Port):port expos
 </pre>
 <pre>
 <b>Command:</b>
-sudo docker run --name ##NAME_OF_YOUR_DOCKER_CONTAINER## -d -p 8082:80 ##NAME_OF_YOUR_DOCKER_IMAGE##
+sudo docker run --name ##NAME_OF_YOUR_DOCKER_CONTAINER## -d -p 3311:3306 ##NAME_OF_YOUR_DOCKER_IMAGE##
 </pre>
 <pre>
 <b>Example:</b>

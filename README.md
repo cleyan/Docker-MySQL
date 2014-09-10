@@ -68,6 +68,7 @@ mysql -uroot -proot -h172.17.42.1 -P3311
 <li><b>docker inspect ##CONTAINER_NAME## :</b> To get all the information about the container.</li>
 <li><b>docker logs ##CONTAINER_NAME## :</b> To get the logs of the container.</li>
 <li><b>docker ps -a:</b> To get the listing of all the containers.</li>
+<li><b>docker start ##CONTAINER_NAME##:</b> To start the exiting docker container.</li>
 </ul>
 
 <h4>Additional Notes:</h4>
@@ -78,4 +79,5 @@ mysql -uroot -proot -h172.17.42.1 -P3311
   <li>You can use any of the mysql client command inside the docker</li>
   <li>You can connect it from PHP using : mysql_connect('172.17.42.1:3311', 'root', 'root') - You will have to mention the port name here with IP.</li>
   <li>For changing the username and password modify the MYSQL_USER and MYSQL_PASS enviroment variables inside the Dockerfile</li>
+  <li>You can also access your docker container from mysql-workbech and phpmyadmin interface</li>
 </ul>

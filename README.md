@@ -75,4 +75,5 @@ mysql -uroot -proot -h172.17.42.1 -P3311
   <li>You can run multiple container using single image, but you will have to define a free port and the name for it.</li>
   <li>You can get the Gateway IP and other information of the docker container using the command docker inspect  ##CONTAINER_NAME##</li>
   <li> You can get the container name using the command docker ps -a</li>
+  <li>You can use any of the mysql client command inside the docker</li>
 </ul>
